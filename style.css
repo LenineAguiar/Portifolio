@@ -47,8 +47,57 @@ nav li {
 	padding: 5px;
 }
 
-.foto {
-	width: 30%;
-	height: 10%;
+.titulo-rafting {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	display: inline;
+	text-align: center;
 }
 
+.slide-container {
+	width: 1280px;
+	height: 853px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.image-container {
+	width: 3840px;
+	height: 853px;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+	-moz-transition: left 2s;
+	-o-transition:left 2s;
+}
+
+.slider-image {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.button-container {
+	top: -840px;
+	position: relative;
+}
+
+.slider-button {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: yellow;
+}
+
+#slider-image-1:target ~.image-container{
+	left:0px;}
+
+#slider-image-2:target ~.image-container{
+	left:-1280px;}
+
+#slider-image-3:target ~.image-container{
+	left:-2560px;}
