@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Lenine Portfólio</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1 class="titulo-cabecalho">Portifólio<br>Lenine</h1>
+			<div class="caixa">
+				<nav>
+					<ul class="opcoes-cabecalho">
+						<li><a class="texto-cabecalho" href="home.html">home</a></li>
+						<li><a class="texto-cabecalho" href="Parallax.html">Página Parallax</a></li>
+						<li><a class="texto-cabecalho" href="formulario.html">Página Formulário</a></li>
+					</ul>
+				</nav>
+			</div>			
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome:</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome Completo">
+
+				<label for="datanascimento">Data de Nascimento:</label>
+				<input type="text" id="datanascimento" class="input-padrao" required placeholder="01/01/1900">
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="Telefone" class="input-padrao" required placeholder="(xx) 98888-8888">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seu@email.com">
+
+				<label for="mensagem">Sua Opinião:</label>
+				<textarea type="text" id="mensagem" class="input-padrao" rows="7"></textarea>
+
+				<fieldset>
+					<legend>Como Prefere ser Contatado?</legend>
+
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+					<label for="whatsapp"><input type="radio" name="contato" id="whatsapp" value="whatsapp"> Whatsapp</label>
+
+					<label for="telefone"><input type="radio" name="contato" id="telefone" value="telefone"> Telefone</label>
+
+				</fieldset>
+				<fieldset class="horario">
+					<p>Disponibilidade de Horários</p>
+					<select class="select">
+						<option class="manha">Manhã</option>
+						<option class="tarde">Tarde</option>
+						<option class="noite">Noite</option>
+						<option class="total">Total</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked >Receber Atualizações Via Email</label>
+
+				<input type="submit" value="Enviar Informações" class="enviar">
+
+			</form>
+
+		</main>
+	</body>
