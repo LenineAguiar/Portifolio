@@ -14,7 +14,7 @@ header {
 }
 
 nav li {
-	display: inline;
+	display: inline-block;
 }
 
 .titulo-cabecalho {
@@ -35,16 +35,15 @@ nav li {
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 18px;
-	margin: 0 10%;
 	border: 1px solid transparent;
-	padding: 5px;
+	padding-right: 60px;
+	
 }
 
 .texto-cabecalho:hover {
 	color:#000000;
 	border: 1px solid #000;
 	border-radius: 5px;
-	padding: 5px;
 }
 
 .titulo-rafting {
@@ -101,3 +100,57 @@ nav li {
 
 #slider-image-3:target ~.image-container{
 	left:-2560px;}
+
+form {
+	margin: 40px 20px;
+}
+
+form label {
+	display: block;
+	padding: 20px 0 10px;
+}
+
+.input-padrao {
+	width: 30%;
+	padding: 10px;
+}
+
+form legend  {
+	display: block;
+	padding: 20px 0 0 5px;
+	background-color: #ffff99;
+}
+
+.radio-contato {
+	background-color: #ffff11;
+	margin: 0 0 0 5px;
+}
+
+.horario {
+	margin: 20px 0 0 5px;
+}
+
+.select {
+	background-color: #FFFF99;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+.manha, .tarde, .noite, .total {
+	background-color: #FFFF99;
+	padding: 10px;
+}
+
+.checkbox {
+	margin-bottom: 10px;
+}
+
+.enviar {
+	width: 30%;
+	background-color: #1E90FF;
+	color: white;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
